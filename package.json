@@ -1,0 +1,29 @@
+{
+  "name": "modelprobe",
+  "version": "1.0.0",
+  "description": "Local AI model API tester with chat, metrics, and usage graphs.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node server.js",
+    "dev:web": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^10.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lucide-react": "^1.17.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "recharts": "^3.8.1",
+    "vite": "^8.0.16"
+  }
+}
